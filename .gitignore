@@ -1,2 +1,33 @@
-/.venv
-/db.sqlite3
+# Environnement virtuel
+.venv/
+venv/
+
+# Base de données SQLite
+db.sqlite3
+
+# Migrations compilées
+**/migrations/__pycache__/
+**/migrations/*.pyc
+
+# Fichiers Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache Django
+staticfiles/
+media/
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
