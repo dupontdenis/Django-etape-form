@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des personnes</title>
+</head>
+<body>
+
+    <h1>Liste des personnes</h1>
+
+    {% if persons %}
+        <ul>
+            {% for p in persons %}
+                <li>{{ p.first_name }} {{ p.last_name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucune personne enregistrée.</p>
+    {% endif %}
+
+    <p>
+        <a href="{% url 'person_create' %}">Créer une nouvelle personne &raquo;</a>
+    </p>
+
+</body>
+</html>
