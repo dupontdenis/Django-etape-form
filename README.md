@@ -1,5 +1,5 @@
 ```markdown
-## 2. Créer un environnement virtuel
+## Créer un environnement virtuel
 
 ```bash
 python -m venv .venv
